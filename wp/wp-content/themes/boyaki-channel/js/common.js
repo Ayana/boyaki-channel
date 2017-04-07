@@ -34,19 +34,6 @@ jQuery(function(){
 
 		//////// for Desktop //////////
 
-		// Header Fixed Nav
-		jQuery(window).load(function() {
-
-			jQuery(window).scroll(function () {
-		    if (jQuery(this).scrollTop() > 320) {
-	        jQuery(".js-slide").addClass("is-active");
-		    } else {
-	        jQuery(".js-slide").removeClass("is-active");
-		    }
-			});
-
-		});
-
 	}
 
 });

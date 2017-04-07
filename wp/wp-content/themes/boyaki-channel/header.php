@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4178463874081004",
-    enable_page_level_ads: true
-  });
-</script>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name="copyright" content="Copyright (C) Misawaya. All Rights Reserved.">
+<meta name="copyright" content="Copyright (C) Boyaki-Channel. All Rights Reserved.">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+<!-- <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
@@ -25,7 +18,7 @@
 <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
 <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="shortcut icon" href="/favicons/favicon.ico">
+<link rel="shortcut icon" href="/favicons/favicon.ico"> -->
 
 <link rel="index" href="/">
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/foundation.css" type="text/css" />
@@ -94,38 +87,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="l-header text-center clearfix">
 
-  <!-- PC用固定ナビゲーション -->
-  <nav class="nav-global pc-header-fixed js-fixed js-slide">
-    <ul class="nav-global__block">
-      <li class="nav-global__list nav-global__list--title font-display"><span class="nav-global__text--title">Category</span><span class="nav-global__button-close js-slide-button">×</span></li>
-      <li class="nav-global__list"><a href="/category/misawaya/" class="txt_c_333 nav-global__link"><span class="nav-global__text--primary">箕澤屋のこと</span><span class="nav-global__text--secondary font-display">Misawaya</span></a></li>
-      <li class="nav-global__list"><a href="/category/local/" class="txt_c_333 nav-global__link">周辺地域のこと<span class="nav-global__text--secondary font-display">Local</span></a></li>
-      <li class="nav-global__list"><a href="/category/life/" class="txt_c_333 nav-global__link">暮らしづくり<span class="nav-global__text--secondary font-display">Life</span></a></li>
-      <li class="nav-global__list"><a href="/category/food/" class="txt_c_333 nav-global__link">おいしいもの<span class="nav-global__text--secondary font-display">Food</span></a></li>
-      <li class="nav-global__list"><a href="/category/info/" class="txt_c_333 nav-global__link">お知らせ<span class="nav-global__text--secondary font-display">Info</span></a></li>
-    </ul>
-  </nav>
-  <!-- //PC用固定ナビゲーション -->
-
   <div class="inner container">
 
     <div class="header-social social-pc">
       <ul>
-        <li><a href="https://www.instagram.com/misawayanohanashi/" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_instagram_bl.png" alt="Instagram" class="header-social__image" /></a></li>
-        <li><a href="https://twitter.com/Ayao3308" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_twitter_bl.png" alt="Twitter" class="header-social__image" /></a></li>
-        <li><a href="https://www.facebook.com/misawayanohanashi/" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_facebook_bl.png" alt="Twitter" class="header-social__image" /></a></li>
-        <li><a href="https://www.youtube.com/channel/UCnpXiESyTEzvKkIrmM85fyQ" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_youtube_bl.png" alt="YouTube" class="header-social__image" /></a></li>
+        <li><a href="https://twitter.com/Boyaki_Channel" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_twitter_bl.png" alt="Twitter" class="header-social__image" /></a></li>
+        <li><a href="https://www.youtube.com/channel/UCoildZS48WA5uKyNoyuGg0g" target="_blank" class="header-social__link"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/ico_youtube_bl.png" alt="YouTube" class="header-social__image" /></a></li>
       </ul>
     </div>
 
     <div class="logo text-center">
       <a href="/">
         <div class="hover">
-          <p class="logo--secondary font-min txt_c_333">長野県箕輪町にある古民家を拠点にした話</p>
           <?php if (is_page(home)) { ?>
-            <h1 class="logo--primary"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_header.png" alt="信州箕輪町の古民家 箕澤屋のハナシ（みさわやのはなし）" class="logo-header__image" /></h1>
+            <h1 class="logo--primary"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_header.png" alt="Boyaki Channel" class="logo-header__image" /></h1>
           <?php } else { ?>
-            <p class="logo--primary"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_header.png" alt="信州箕輪町の古民家 箕澤屋のハナシ（みさわやのはなし）" class="logo-header__image" /></p>
+            <p class="logo--primary"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_header.png" alt="Boyaki Channel" class="logo-header__image" /></p>
           <?php } ?>
         </div>
       </a>
@@ -137,40 +114,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="ico_humbarger ico_humbarger--third"></span>
     </nav>
 
-    <!-- SP用固定ヘッダー -->
-    <div class="sp-header-fixed js-fixed js-slide">
-      <div class="logo text-center">
-        <a href="/">
-          <div class="hover">
-            <p class="logo--primary"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_header.png" alt="信州箕輪町の古民家 箕澤屋のハナシ（みさわやのはなし）" class="logo-header__image" /></p>
-          </div>
-        </a>
-      </div>
-
-      <nav class="header-button js-slide-button">
-        <span class="ico_humbarger"></span>
-        <span class="ico_humbarger ico_humbarger--second"></span>
-        <span class="ico_humbarger ico_humbarger--third"></span>
-      </nav>
-
-    </div>
-    <!-- //SP用ヘッダー -->
-
   </div>
 
 </header>
 
 <!-- PCSP共通固定ナビゲーション -->
-<nav class="nav-global js-slide">
+<!-- <nav class="nav-global js-slide">
   <ul class="nav-global__block">
     <li class="nav-global__list nav-global__list--title font-display"><span class="nav-global__text--title">Category</span><span class="nav-global__button-close js-slide-button">×</span></li>
-    <li class="nav-global__list"><a href="/category/misawaya/" class="txt_c_333 nav-global__link"><span class="nav-global__text--primary">箕澤屋のこと</span><span class="nav-global__text--secondary font-display">Misawaya</span></a></li>
-    <li class="nav-global__list"><a href="/category/local/" class="txt_c_333 nav-global__link">周辺地域のこと<span class="nav-global__text--secondary font-display">Local</span></a></li>
-    <li class="nav-global__list"><a href="/category/life/" class="txt_c_333 nav-global__link">暮らしづくり<span class="nav-global__text--secondary font-display">Life</span></a></li>
-    <li class="nav-global__list"><a href="/category/food/" class="txt_c_333 nav-global__link">おいしいもの<span class="nav-global__text--secondary font-display">Food</span></a></li>
-    <li class="nav-global__list"><a href="/category/info/" class="txt_c_333 nav-global__link">お知らせ<span class="nav-global__text--secondary font-display">Info</span></a></li>
+    <li class="nav-global__list"><a href="" class="txt_c_333 nav-global__link"><span class="nav-global__text--primary">カテゴリ</span><span class="nav-global__text--secondary font-display">Misawaya</span></a></li>
+    <li class="nav-global__list"><a href="" class="txt_c_333 nav-global__link">カテゴリ<span class="nav-global__text--secondary font-display">Local</span></a></li>
+    <li class="nav-global__list"><a href="" class="txt_c_333 nav-global__link">カテゴリ<span class="nav-global__text--secondary font-display">Life</span></a></li>
+    <li class="nav-global__list"><a href="" class="txt_c_333 nav-global__link">カテゴリ<span class="nav-global__text--secondary font-display">Food</span></a></li>
+    <li class="nav-global__list"><a href="" class="txt_c_333 nav-global__link">カテゴリ<span class="nav-global__text--secondary font-display">Info</span></a></li>
   </ul>
-</nav>
+</nav> -->
 <!-- //PCSP共通固定ナビゲーション -->
 
 <div class="js-overlay"></div>

@@ -78,7 +78,7 @@ function get_meta_keywords() {
 
 // meta keywords のタグを出力する関数
 function echo_meta_keywords_tag() {
-  echo '<meta name="keywords" content="' . get_meta_keywords() . ',みさわや,Misawaya,古民家,リノベーション,信州,長野,箕輪町,はなし,misawayanohanashi,nagano,古民家再生,古民家改修,三澤屋,三沢屋" />' . "\n";
+  echo '<meta name="keywords" content="' . get_meta_keywords() . ',BOYAKI,ボヤキチャンネル,ぼやきちゃんねる" />' . "\n";
 }
 
 ///////////////////// excerptからmeta description用の説明文を取得する関数　/////////////////////
@@ -164,7 +164,7 @@ function catch_that_image() {
     $first_img = $matches [1] [0];
 
     if(empty($first_img)){ //Defines a default image
-      $first_img = "/wp/wp-content/themes/misawaya/images/common/no_image.jpg";
+      $first_img = "/wp/wp-content/themes/boyaki-channel/images/common/no_image.jpg";
     }else{
       $first_img = substr_replace($first_img, '-300x200',strrpos($first_img,'.'),0) ;
     }

@@ -6,12 +6,8 @@
     width: 100%;
   }
   @include desktop($break-small) {
-    background-image: linear-gradient(to right, #dcd9d9 30%, rgba(255,255,255,0) 0%);
-    background-position: bottom;
-    background-size: 12px 1px;
-    background-repeat: repeat-x;
-    position: relative;
     .inner {
+      padding: 20px 0;
       position: relative;
     }
   }

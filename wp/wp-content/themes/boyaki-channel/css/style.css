@@ -103,14 +103,8 @@ html body {
   }
 }
 @media screen and (min-width: 48em) {
-  .l-header {
-    background-image: linear-gradient(to right, #dcd9d9 30%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 12px 1px;
-    background-repeat: repeat-x;
-    position: relative;
-  }
   .l-header .inner {
+    padding: 20px 0;
     position: relative;
   }
 }
@@ -543,7 +537,7 @@ html body {
 @media screen and (min-width: 48em) {
   .logo {
     line-height: 1.6;
-    max-width: 280px;
+    max-width: 680px;
     margin: 0 0 20px;
   }
 }
@@ -561,20 +555,6 @@ html body {
 @media screen and (min-width: 48em) {
   .logo .logo--primary {
     font-size: 2.5rem;
-    padding: 0 30px;
-  }
-}
-@media screen and (max-width: 48em) {
-  .logo .logo--secondary {
-    font-size: 0.8rem;
-    margin: 15px 0 12px;
-  }
-}
-@media screen and (min-width: 48em) {
-  .logo .logo--secondary {
-    font-size: .75rem;
-    margin-bottom: 12px;
-    letter-spacing: 0.1em;
   }
 }
 
@@ -1024,7 +1004,7 @@ html body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
-  background-image: url(/wp/wp-content/themes/misawaya/images/common/ico_search_bl.png);
+  background-image: url(/wp/wp-content/themes/boyaki-channel/images/common/ico_search_bl.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1248,13 +1228,8 @@ html body {
     margin-bottom: 2em;
   }
   .widget .widget__text--title {
-    background-image: url(/wp/wp-content/themes/misawaya/images/common/ico_kome_bl.png);
-    background-repeat: no-repeat;
-    background-size: 8px;
-    background-position: left center;
     font-size: 1.1rem;
     margin-bottom: 0.4em;
-    padding-left: 14px;
   }
   .widget li {
     border-bottom: 1px solid #eee;
