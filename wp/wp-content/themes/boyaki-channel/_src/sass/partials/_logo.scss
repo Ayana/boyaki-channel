@@ -1,0 +1,53 @@
+/* logo
+----------------------------------------------------------------- */
+.logo {
+  @include mobile($break-small) {
+  }
+  @include desktop($break-small) {
+    line-height: 1.6;
+    max-width: 280px;
+    margin: 0 0 20px;
+  }
+  .logo--primary {
+    margin-bottom: 0;
+    @include mobile($break-small) {
+      font-size: 1.3rem;
+      margin: 5px auto 15px;
+      padding: 0 20px 0;
+      width: 60%;
+    }
+    @include desktop($break-small) {
+      font-size: 2.5rem;
+      padding: 0 30px;
+    }
+  }
+  .logo--secondary {
+    @include mobile($break-small) {
+      font-size: 0.8rem;
+      margin: 15px 0 12px;
+    }
+    @include desktop($break-small) {
+      font-size: .75rem;
+      margin-bottom: 12px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+@include mobile($break-small) {
+  .logo-footer {
+    padding-top: 10px;
+    .logo-footer__image {
+      margin: 20px auto 10px;
+      width: 40px;
+    }
+  }
+}
+@include desktop($break-small) {
+  .logo-footer {
+    padding-top: 20px;
+    .logo-footer__image {
+      margin: 20px auto 10px;
+      width: 40px;
+    }
+  }
+}

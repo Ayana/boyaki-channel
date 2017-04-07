@@ -1,0 +1,122 @@
+/* social
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .instagram {
+    padding-bottom: 2em;
+    .instagram__title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      .instagram__icon {
+        display: block;
+        margin: 0 auto;
+        width: 35px;
+      }
+    }
+    .instagram__block {
+      line-height: 0;
+      .instagram__list {
+        display: inline-block;
+        width: 33.3333%;
+        .instagram__link {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .instagram {
+    padding-bottom: 3em;
+    .instagram__title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      // text-shadow: #fff 1px 1px 0;
+      &:after {
+        // content:"Instagram Gallery";
+        // margin: -40px 0 0 7px;
+        // background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%);
+        // background-size: 4px 4px;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // z-index: -5;
+        // display: block;
+        // text-shadow: none;
+      }
+      .instagram__icon {
+        display: block;
+        margin: 0 auto;
+        width: 35px;
+      }
+    }
+    .instagram__block {
+      line-height: 0;
+      .instagram__list {
+        display: inline-block;
+        width: 230px;
+        .instagram__link {
+          display: block;
+        }
+      }
+    }
+  }
+  /* slider  */
+  .slideIco {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .ico_ar_r {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    right: 40%;
+  }
+  .ico_ar_l {
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    left: 40%;
+  }
+  .slideFrame {
+  	position: relative;
+  	/*margin: 0 20px;*/
+  	overflow: hidden;
+  	overflow-x: auto;
+  	width: 100%;
+  	height: 230px;
+  }
+  .slideCell {
+  	display: block;
+  	float: left;
+  	height: 100%;
+  	color: #333;
+  }
+  /* controller */
+  .slideCtrl {
+  	background: rgba(255, 255, 255, 0.5);
+  	color: #fff;
+  	cursor: default;
+  	font-size: 12px;
+  	height: 100%;
+  	padding: 0 4px;
+  	position: absolute;
+  	top: 0;
+  	width: 80px;
+  	text-align: center;
+  	opacity: 0.8;
+  	-moz-opacity: 0.8;
+  	-webkit-opacity: 0.8;
+  	filter: alpha(opacity=80);
+  }
+  .slideCtrl.left { left: -5px; }
+  .slideCtrl.right { right: -5px; }
+}

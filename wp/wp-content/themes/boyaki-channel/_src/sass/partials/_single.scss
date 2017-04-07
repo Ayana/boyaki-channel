@@ -1,0 +1,144 @@
+/* single-article
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .single-article {
+    .single-article--title {
+      font-size: 1.6rem;
+      padding: 10px 15px;
+    }
+    .single-article--property {
+      padding: 5px 15px;
+      position: relative;
+      .single-article__text--time {
+        margin-right: 18px;
+      }
+      .single-article__link--tag {
+        color: #111;
+        font-size: 0.92rem;
+        display: block;
+        margin-top: 2px;
+      }
+      .single-article__link--category {
+        font-size: 0.75rem;
+        border-radius: 2px;
+        color: #fff;
+        display: inline-block;
+        padding: 2px 8px;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        margin: 5px 0;
+      }
+    }
+    .single-article--content {
+      padding: 10px 15px;
+      letter-spacing: 0.05em;
+      line-height: 2;
+      margin-bottom: 6em;
+      h2 {
+        border-left: 2px solid #111;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin: 2em 0 0.5em;
+        padding: 0 15px;
+      }
+      h3 {
+        border-left: 1px solid #222;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin: 1.5em 0 0.5em;
+        padding-left: 15px;
+      }
+      p {
+        margin-bottom: 1.5em;
+      }
+      img {
+        margin-top: 0.5em;
+      }
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .single-article {
+    .single-article--title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.8em;
+    }
+    .single-article--property {
+      margin: 0 0 3em;
+      .single-article__text--time {
+        margin-right: 18px;
+      }
+      .single-article__link--tag {
+        border-left: 1px solid #888;
+        color: #111;
+        font-size: 0.92rem;
+        padding-left: 18px;
+      }
+      .single-article__link--category {
+        font-size: 0.75rem;
+        float: right;
+        border-radius: 2px;
+        color: #fff;
+        padding: 2px 8px;
+      }
+    }
+    .single-article--content {
+      letter-spacing: 0.05em;
+      line-height: 2;
+      margin-bottom: 6em;
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 2em 0 1.5em;
+        border-left: 2px solid #111;
+        padding: 0 15px;
+        // ボーダーバージョン
+        // background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 2px, #fff 3px, #fff 5px);
+        // background-size: 5px;
+        // ストライプバージョン
+        // background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #efefef 25%, #efefef 50%, transparent 50%, transparent 75%, #efefef 75%);
+        // background-size: 6px 6px;
+        // background-position: left bottom;
+      }
+      h3 {
+        border-left: 1px solid #222;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-left: 15px;
+        margin: 2em 0 1.5em;
+      }
+      p {
+        margin-bottom: 1.5em;
+      }
+      img {
+        margin-top: 0.8em;
+      }
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.single-article__link--misawaya {
+  background-color: #f3d45b;
+}
+.single-article__link--life {
+  background-color: #ffad7b;
+}
+.single-article__link--local {
+  background-color: #80cee0;
+}
+.single-article__link--food {
+  background-color: #ff9796;
+}
+.single-article__link--info {
+  background-color: #99d6ab;
+}

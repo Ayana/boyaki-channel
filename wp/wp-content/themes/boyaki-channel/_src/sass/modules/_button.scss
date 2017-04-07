@@ -1,0 +1,44 @@
+/* button
+----------------------------------------------------------------- */
+
+// button more
+.button--more {
+	border: 1px solid #888;
+	@include border-radius(3px);
+	color: #333;
+	display: block;
+	margin: 0 auto;
+	padding: 12px 40px 12px 30px;
+	position: relative;
+	width: 250px;
+	&:after {
+		@include transition(0.3s);
+		content: "";
+		position: absolute;
+		right: 20px;
+		top: 0;
+		bottom: 0;
+		display: block;
+		margin-top: auto;
+		margin-right: 0;
+		margin-bottom: auto;
+		margin-left: 0;
+		width: 8px;
+		height: 8px;
+		border-top: 1px solid #333;
+		border-right: 1px solid #333;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	&:hover {
+		background: #eee;
+		border: 1px solid #eee;
+		color: #555;
+		opacity: 1;
+		&:after {
+			// border-top: 1px solid #ddd;
+			// border-right: 1px solid #ddd;
+		}
+	}
+}

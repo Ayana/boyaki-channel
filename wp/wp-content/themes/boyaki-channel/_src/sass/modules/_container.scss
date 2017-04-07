@@ -1,0 +1,11 @@
+/* container
+----------------------------------------------------------------- */
+.container {
+  @include mobile($break-small) {
+    width: 100%;
+  }
+  @include desktop($break-small) {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}

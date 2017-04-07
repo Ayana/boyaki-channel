@@ -1,0 +1,31 @@
+/* align
+----------------------------------------------------------------- */
+// text align
+
+// PCの場合のみセンター寄せ
+.desktop_txt_center {
+  @include desktop($break-small) {
+    text-align: center;
+  }
+  @include mobile($break-small) {
+    text-align: left;
+  }
+}
+// モバイルの場合のみセンター寄せ
+.mobile_txt_center {
+  @include desktop($break-small) {
+    text-align: left;
+  }
+  @include mobile($break-small) {
+    text-align: center;
+  }
+}
+
+
+// vertical align
+.va-10 { vertical-align: -10%; }
+.va-15 { vertical-align: -15%; }
+.va-20 { vertical-align: -20%; }
+.va-30 { vertical-align: -30%; }
+.va-35 { vertical-align: -35%; }
+.va-40 { vertical-align: -40%; }

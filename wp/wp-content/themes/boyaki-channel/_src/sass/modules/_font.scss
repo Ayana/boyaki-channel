@@ -1,0 +1,23 @@
+/* font
+----------------------------------------------------------------- */
+// font size
+.txt_fwn { font-weight: normal; }
+.txt_fwb { font-weight: bold; }
+.txt_10 { font-size: 10px; }
+.txt_12 { font-size: 12px; }
+.txt_14 { font-size: 14px; }
+.txt_16 { font-size: 16px; }
+.txt_18 { font-size: 18px; }
+.txt_20 { font-size: 20px; }
+.txt_24 { font-size: 24px; }
+.txt_28 { font-size: 28px; }
+
+// font color
+.txt_c_333 {color: #333;}
+.txt_c_888 {color: #888;}
+
+// font style
+.font-handwrite { font-family: 'Courgette', cursive; }
+.font-selif { font-family: 'Alegreya', serif; }
+.font-min { font-family: 'Kokoro',"游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","Hiragino Mincho ProN","ＭＳ Ｐ明朝",serif; }
+.font-display { letter-spacing: 0.06em;font-family: 'Ruluko', sans-serif; }

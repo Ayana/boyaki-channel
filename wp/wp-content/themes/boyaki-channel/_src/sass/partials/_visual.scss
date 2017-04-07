@@ -1,0 +1,14 @@
+/* visual
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+	.visual {
+	}
+}
+@include desktop($break-small) {
+	.visual {
+		margin-top: -10px !important;
+		img {
+			margin: 0 auto 50px;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+/* top-article
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .top-article {
+    .top-article__item {
+      border-bottom: 1px solid #eee;
+      padding: 15px;
+      .top-article__image {
+        width: 35%;
+      }
+      .top-article__text {
+        width: 61%;
+        .top-article__text--property {
+          font-size: 0.9rem;
+          margin: 0 0 5px;
+          .top-article__link--category {
+            float: right;
+            font-size: 0.7rem;
+            border-radius: 2px;
+            color: #fff;
+            margin-left: 8px;
+            margin-top: 1px;
+            padding: 0 5px;
+          }
+        }
+        .top-article__link--title {
+          color: #111;
+        }
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .top-article {
+    margin-bottom: 6em;
+    .top-article__item {
+      margin-bottom: 30px;
+      .top-article__image {
+        width: 38%;
+      }
+      .top-article__text {
+        width: 59%;
+        .top-article__text--property {
+          font-size: 0.9rem;
+          margin: 0 0 15px;
+          .top-article__link--category {
+            float: right;
+            font-size: 0.75rem;
+            border-radius: 2px;
+            color: #fff;
+            margin-left: 8px;
+            padding: 1px 6px;
+          }
+        }
+        .top-article__link--title {
+          color: #111;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.top-article__link--misawaya {
+  background-color: #f3d45b;
+}
+.top-article__link--life {
+  background-color: #ffad7b;
+}
+.top-article__link--local {
+  background-color: #80cee0;
+}
+.top-article__link--food {
+  background-color: #ff9796;
+}
+.top-article__link--info {
+  background-color: #99d6ab;
+}

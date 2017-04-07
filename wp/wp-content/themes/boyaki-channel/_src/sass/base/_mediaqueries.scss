@@ -1,0 +1,19 @@
+/* mediaqueries
+----------------------------------------------------------------- */
+// メディアクエリ変数指定
+$break-small: 48em;//768px
+// $break-medium: 992px;
+// $break-large: 1200px;
+// 初期段階では2パターンのみ
+
+// mixin
+@mixin mobile($break-small) {
+  @media screen and (max-width: $break-small) {
+    @content;
+  }
+}
+@mixin desktop($break-small) {
+  @media screen and (min-width: $break-small) {
+    @content;
+  }
+}

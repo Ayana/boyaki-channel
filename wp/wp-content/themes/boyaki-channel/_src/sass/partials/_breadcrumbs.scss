@@ -1,0 +1,58 @@
+/* breadcrumbs
+----------------------------------------------------------------- */
+// breadcrumbs
+.breadcrumbs {
+  margin-bottom: 2.5em;
+  margin-top: -2.8em;
+  @include mobile($break-small) {
+    display: none;
+  }
+  @include desktop($break-small) {
+    font-size: 0.8rem;
+  }
+  div {
+    padding-left: 12px;
+    a {
+      color: #333;
+      padding-right: 15px;
+      position: relative;
+      &:hover {
+        text-decoration: none;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 1px;
+        bottom: 0;
+        display: block;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: 0;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #c0b8b6;
+        border-right: 1px solid #c0b8b6;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    &:first-child{
+      padding-left: 0;
+      a {
+        &:after {
+          // display: none;
+        }
+      }
+    }
+    .home {
+      background-image: url(/wp/wp-content/themes/misawaya/images/common/ico_breadcrumbs_home.png);
+      background-repeat: no-repeat;
+      background-size: 17px;
+      background-position: 0 -1px;
+      padding-left: 22px;
+    }
+  }
+}

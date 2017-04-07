@@ -1,0 +1,13 @@
+/* side
+----------------------------------------------------------------- */
+.l-side {
+  @include mobile($break-small) {
+    margin-top: 20px;
+    width: 100%;
+  }
+  @include desktop($break-small) {
+    float: right;
+    margin-left: 20px;
+    width: 280px;
+  }
+}

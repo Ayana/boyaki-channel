@@ -1,0 +1,70 @@
+/* pager
+----------------------------------------------------------------- */
+.pager {
+	clear: both;
+	margin: 0 0 6em;
+	.next {
+		a {
+			border: 1px solid #888;
+	    border-radius: 2px;
+	    color: #333;
+	    display: block;
+	    padding: 10px 25px 10px 10px;
+			position: relative;
+	    margin: 0 auto;
+	    text-align: center;
+	    width: 92%;
+			&:after {
+		    content: "";
+		    position: absolute;
+		    right: 18px;
+		    top: 0;
+		    bottom: 0;
+		    display: block;
+		    margin-top: auto;
+		    margin-right: 0;
+		    margin-bottom: auto;
+		    margin-left: 0;
+		    width: 9px;
+		    height: 9px;
+		    border-top: 1px solid #333;
+		    border-right: 1px solid #333;
+				@include transform(rotate(45deg));
+			}
+		}
+	}
+	.prev {
+		a {
+			border: 1px solid #888;
+	    border-radius: 2px;
+	    color: #333;
+	    display: block;
+	    padding: 8px 10px 8px 18px;
+			position: relative;
+	    margin: 30px auto 0;
+	    text-align: center;
+	    width: 20%;
+			&:before {
+		    content: "";
+		    position: absolute;
+		    left: 18px;
+		    top: 0;
+		    bottom: 0;
+		    display: block;
+		    margin-top: auto;
+		    margin-right: 0;
+		    margin-bottom: auto;
+		    margin-left: 0;
+		    width: 9px;
+		    height: 9px;
+		    border-bottom: 1px solid #333;
+		    border-left: 1px solid #333;
+				@include transform(rotate(45deg));
+			}
+			@include mobile($break-small) {
+				margin: 20px auto 0;
+		    width: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+/* archive-article
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .archive-article {
+    .archive-article__item {
+      border-bottom: 1px solid #eee;
+      padding: 15px;
+      .archive-article__image {
+        width: 35%;
+      }
+      .archive-article__text {
+        width: 61%;
+        .archive-article__text--property {
+          margin: 0 0 5px;
+          .archive-article__link--category {
+            float: right;
+            font-size: 0.7rem;
+            border-radius: 2px;
+            color: #fff;
+            margin-left: 10px;
+            margin-top: 1px;
+            padding: 0 5px;
+          }
+        }
+      }
+      .archive-article__link--title {
+        color: #111;
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .archive-article {
+    margin-bottom: 5em;
+    .archive-article__item {
+      margin-bottom: 30px;
+      .archive-article__image {
+        width: 38%;
+      }
+      .archive-article__text {
+        width: 59%;
+        .archive-article__text--property {
+          font-size: 0.9rem;
+          margin: 0 0 15px;
+          .archive-article__link--category {
+            float: right;
+            font-size: 0.75rem;
+            border-radius: 2px;
+            color: #fff;
+            margin-left: 10px;
+            padding: 1px 6px;
+          }
+        }
+        .archive-article__link--title {
+          color: #111;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.archive-article__link--misawaya {
+  background-color: #f3d45b;
+}
+.archive-article__link--life {
+  background-color: #ffad7b;
+}
+.archive-article__link--local {
+  background-color: #80cee0;
+}
+.archive-article__link--food {
+  background-color: #ff9796;
+}
+.archive-article__link--info {
+  background-color: #99d6ab;
+}

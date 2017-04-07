@@ -1,0 +1,58 @@
+/* footernav
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .footer-nav {
+    letter-spacing: -.40em;
+    padding: 25px 0 0;
+  	.footer-nav__list {
+      border-bottom: 10px solid #F3F2F0;
+  	  display: block;
+        width: 100%;
+  		.footer-nav__link {
+        background: #fff;
+  			color: #111;
+        display: block;
+  		  font-size: 0.8rem;
+        letter-spacing: normal;
+        margin: 0 15px;
+  		  padding: 13px 0;
+        position: relative;
+				&:after {
+					@include transition(0.3s);
+					content: "";
+					position: absolute;
+					right: 15px;
+					top: 0;
+					bottom: 0;
+					display: block;
+					margin-top: auto;
+					margin-right: 0;
+					margin-bottom: auto;
+					margin-left: 0;
+					width: 6px;
+					height: 6px;
+					border-top: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+					-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+
+  		}
+  	}
+  }
+}
+@include desktop($break-small) {
+  .footer-nav {
+    padding: 30px 0 0;
+  	.footer-nav__list {
+  	  display: inline-block;
+  		.footer-nav__link {
+  			color: #111;
+        display: block;
+  		  font-size: 0.8rem;
+  		  padding: 10px;
+  		}
+  	}
+  }
+}

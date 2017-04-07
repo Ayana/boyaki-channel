@@ -1,0 +1,76 @@
+/* page
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .page {
+    .l-main {
+      padding: 10px 15px;
+      letter-spacing: 0.05em;
+      line-height: 2;
+      margin-bottom: 6em;
+      h1 {
+        font-weight: bold;
+      }
+      h2 {
+        border-left: 2px solid #111;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 2em 0 0.5em;
+        padding: 0 15px;
+      }
+      h3 {
+        border-left: 1px solid #222;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1.5em 0 0.5em;
+        padding-left: 15px;
+      }
+      p {
+        margin-bottom: 1.5em;
+      }
+      img {
+        margin-top: 0.5em;
+      }
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .page {
+    .l-main {
+      letter-spacing: 0.05em;
+      line-height: 2;
+      margin-bottom: 6em;
+      h1 {
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 2em 0 1em;
+        border-left: 2px solid #111;
+        padding: 0 15px;
+      }
+      h3 {
+        border-left: 1px solid #222;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-left: 15px;
+        margin: 1.5em 0 0.8em;
+      }
+      p {
+        margin-bottom: 1.5em;
+      }
+      img {
+        margin-top: 0.8em;
+      }
+      strong {
+        font-weight: bold;
+      }
+      .embed-map iframe{
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/* twitter
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+  .twitter {
+    margin: -10px 15px 15px;
+    .twitter-timeline__wrapper {
+      border: 1px solid #eee;
+      margin: 0 0 15px;
+      .timeline-Body {
+        border-bottom: none;
+      }
+    }
+  }
+}
+@include desktop($break-small) {
+  .twitter {
+    margin-top: -1em;
+    .twitter-timeline__wrapper {
+      border: 1px solid #eee;
+      margin-bottom: 10px;
+      .timeline-Body {
+        border-bottom: none;
+      }
+    }
+  }
+}

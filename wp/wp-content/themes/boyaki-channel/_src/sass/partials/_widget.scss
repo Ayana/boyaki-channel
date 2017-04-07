@@ -1,0 +1,191 @@
+/* widget
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+	.widget {
+		.widget__text--title {
+	    border-bottom: 1px solid #eee;
+			font-weight: bold;
+			padding: 20px 15px 10px;
+		}
+		li {
+			border-bottom: 1px solid #eee;
+			clear: both;
+			a {
+				color: #111;
+    		display: block;
+		    padding: 15px;
+				position: relative;
+				img {
+					display: inline-block;
+			    margin-right: 10px;
+			    vertical-align: top;
+					width: 100px;
+				}
+				.title {
+			    display: inline-block;
+			    width: 60%;
+				}
+				&:after {
+					@include transition(0.3s);
+					content: "";
+					position: absolute;
+					right: 15px;
+					top: 0;
+					bottom: 0;
+					display: block;
+					margin-top: auto;
+					margin-right: 0;
+					margin-bottom: auto;
+					margin-left: 0;
+					width: 8px;
+					height: 8px;
+					border-top: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+					-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+		.wpp-list {
+			.wpp-list__list {
+		    display: block;
+			  padding: 15px 20px 15px 15px;
+		    position: relative;
+				a {
+			    display: inherit;
+			    padding: 0;
+			    position: inherit;;
+					&:after {
+						display: none;
+					}
+				}
+				&:after {
+					@include transition(0.3s);
+					content: "";
+					position: absolute;
+					right: 15px;
+					top: 0;
+					bottom: 0;
+					display: block;
+					margin-top: auto;
+					margin-right: 0;
+					margin-bottom: auto;
+					margin-left: 0;
+					width: 8px;
+					height: 8px;
+					border-top: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+					-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+		.textwidget {
+			padding: 15px;
+			.widget-about__image {
+				float: left;
+		    margin: 0 15px 5px 0;
+				width: 32%;
+			}
+		}
+		.tagcloud {
+			padding: 10px 15px;
+			a {
+				color: #333;
+			  display: inline-block;
+			  font-size: .8rem !important;
+			  background: #f6f6f6;
+			  border-radius: 5px;
+			  margin-right: 5px;
+				margin-bottom: 8px;
+			  padding: 2px 8px;
+				white-space: nowrap;
+			}
+			.tag-link-15 {
+				display: none;
+			}
+		}
+	}
+}
+@include desktop($break-small) {
+	.widget {
+		margin-bottom: 2em;
+		.widget__text--title {
+			background-image: url(/wp/wp-content/themes/misawaya/images/common/ico_kome_bl.png);
+	    background-repeat: no-repeat;
+	    background-size: 8px;
+	    background-position: left center;
+	    font-size: 1.1rem;
+	    margin-bottom: 0.4em;
+	    padding-left: 14px;
+		}
+		li {
+			border-bottom: 1px solid #eee;
+			clear: both;
+	    font-size: 0.9rem;
+			a {
+				color: #111;
+				display: block;
+		    padding-top: 0.9em;
+		    padding-bottom: 0.9em;
+				padding-left: 2px;
+				img {
+					display: inline-block;
+			    margin-right: 10px;
+			    vertical-align: top;
+					width: 100px;
+				}
+				.title {
+			    display: inline-block;
+					float: right;
+					margin-top: 2px;
+					margin-left: 2%;
+			    width: 58%;
+				}
+			}
+			&:first-child {
+		    border-top: 1px solid #eee;
+				a {
+			    padding-top: 0.9em;
+				}
+			}
+		}
+		.textwidget {
+			font-size: .9rem;
+			.widget-about__image {
+				float: left;
+		    margin: 0 15px 5px 0;
+				width: 30%;
+			}
+		}
+		.wpp-list {
+			.wpp-list__list {
+				a {
+			    display: inline-block;
+				}
+				.wpp-post-title {
+			    width: 58%;
+			    vertical-align: top;
+				}
+			}
+		}
+		.tagcloud {
+			a {
+				color: #333;
+			  display: inline-block;
+			  font-size: .8rem !important;
+			  background: #f6f6f6;
+			  border-radius: 5px;
+			  margin-right: 5px;
+				margin-bottom: 8px;
+			  padding: 2px 8px;
+				white-space: nowrap;
+			}
+			.tag-link-15 {
+				display: none;
+			}
+		}
+	}
+}

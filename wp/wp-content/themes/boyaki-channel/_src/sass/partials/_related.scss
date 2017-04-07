@@ -1,0 +1,43 @@
+/* related
+----------------------------------------------------------------- */
+@include mobile($break-small) {
+	.article-related {
+		border-top: 1px solid #eee;
+    padding: 15px 0;
+		.article-related__item {
+			padding: 10px 15px;
+			.article-related__image {
+        width: 35%;
+			}
+			.article-related__text {
+				float: right;
+        width: 61%;
+				.article-related__link--title {
+					color: #111;
+					display: block;
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+}
+@include desktop($break-small) {
+	.article-related__item {
+		border-bottom: 1px solid #eee;
+		margin: 0 0 20px;
+		padding: 0 2px;
+		width: 100%;
+    vertical-align: top;
+		.article-related__image {
+			display: block;
+			float: left;
+			margin: 0 15px 20px 0;;
+			width: 20%;
+		}
+		.article-related__link--title {
+			color: #111;
+			display: block;
+			font-size: 1.2rem;
+		}
+	}
+}

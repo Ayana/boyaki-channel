@@ -1,0 +1,8 @@
+/* main
+----------------------------------------------------------------- */
+.l-main {
+  @include desktop($break-small) {
+    float: left;
+    width: 800px;
+  }
+}
